@@ -127,19 +127,20 @@ a:link, a:visited, a:hover, a:active
 
 ul 
 {
+	transition-duration: 0.6s;
     margin: 0;
     padding: 0;
 	width: 200px;
 	border: 2px solid #888888;
 	position: fixed;
-	bottom: -2;
+	bottom: -155;
 	right: 2;
 	z-index: 10000;
 }
 
-.menu
+ul:hover
 {
-	
+	bottom: -2;
 }
 
 li 
@@ -153,31 +154,6 @@ li
 	font-size: 20px;
 	text-shadow: 2px 2px 5px black;	
 	text-align: center;
-}
-
-
-.menu_small
-{
-	z-index: 10001;
-	bottom: 0;
-	right: 0;
-	width: 200px;
-	height: 20px;
-	background-color: #444444;
-	padding: 8px 16px;
-	color: #888888;
-	position: fixed;
-	font-weight: bold;
-	font-size: 20px;
-	text-shadow: 2px 2px 5px black;
-	text-align: center;
-	border: 2px solid #888888;
-}
-
-.menu_small:hover .menu 
-{
-	display: initial;
-	width: 500px;
 }
 
 li:hover
